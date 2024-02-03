@@ -37,20 +37,12 @@ public class TreeDisplayItem {
         return subfolderCount.get();
     }
 
-    public SimpleIntegerProperty subfolderCountProperty() {
-        return subfolderCount;
-    }
-
     public void addSubfolderCount(int subfolders) {
         this.subfolderCount.set(this.subfolderCount.get() + subfolders);
     }
 
     public long getFilesize() {
         return filesize.get();
-    }
-
-    public SimpleLongProperty filesizeProperty() {
-        return filesize;
     }
 
     public void addFilesize(long filesize) {
