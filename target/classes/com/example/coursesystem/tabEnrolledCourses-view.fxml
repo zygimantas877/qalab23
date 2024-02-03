@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="541.0" prefWidth="846.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.coursesystem.fxControllers.EnrolledCoursesController">
+   <children>
+      <TreeTableView fx:id="twEnrolledCourses" layoutX="28.0" layoutY="63.0" prefHeight="468.0" prefWidth="405.0">
+         <columns>
+            <TreeTableColumn fx:id="colMyCourse" prefWidth="404.0" text="Course" />
+         </columns>
+      </TreeTableView>
+      <Label layoutX="158.0" layoutY="22.0" prefWidth="145.0" scaleX="1.5" scaleY="1.5" text="Enrolled courses">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label fx:id="lblSelectedCourse" layoutX="581.0" layoutY="55.0" scaleX="2.0" scaleY="2.0" />
+      <TextArea fx:id="txtDescription" editable="false" layoutX="480.0" layoutY="233.0" prefHeight="102.0" prefWidth="273.0" wrapText="true" />
+      <TextField fx:id="txtFolderName" editable="false" layoutX="468.0" layoutY="363.0" prefHeight="25.0" prefWidth="160.0" />
+      <Label layoutX="480.0" layoutY="216.0" text="Description" />
+      <Label layoutX="468.0" layoutY="345.0" text="Folder name" />
+      <TextField fx:id="txtSubfolders" editable="false" layoutX="639.0" layoutY="363.0" prefHeight="25.0" prefWidth="61.0" />
+      <TextField fx:id="txtTotalSize" editable="false" layoutX="716.0" layoutY="363.0" prefHeight="25.0" prefWidth="96.0" />
+      <Label layoutX="641.0" layoutY="345.0" text="Subfolders" />
+      <Label layoutX="717.0" layoutY="345.0" text="Total filesize (Kb)" />
+      <Label layoutX="714.0" layoutY="394.0" text="Size (Kb)" />
+      <Label layoutX="639.0" layoutY="394.0" text="Extension" />
+      <TextField fx:id="txtSize" editable="false" layoutX="714.0" layoutY="411.0" prefHeight="25.0" prefWidth="96.0" />
+      <TextField fx:id="txtFileExtension" editable="false" layoutX="639.0" layoutY="411.0" prefHeight="25.0" prefWidth="61.0" />
+      <Label layoutX="468.0" layoutY="394.0" text="File name" />
+      <TextField fx:id="txtFileName" editable="false" layoutX="468.0" layoutY="411.0" prefHeight="25.0" prefWidth="160.0" />
+      <Button layoutX="727.0" layoutY="462.0" mnemonicParsing="false" onAction="#leaveCourse" text="Leave course" />
+      <TextField fx:id="txtUsername" layoutX="480.0" layoutY="117.0" prefHeight="25.0" prefWidth="273.0" />
+      <TextField fx:id="txtCourseLenght" layoutX="480.0" layoutY="175.0" prefHeight="25.0" prefWidth="273.0" />
+      <Label layoutX="481.0" layoutY="100.0" text="Created by" />
+      <Label layoutX="482.0" layoutY="158.0" text="Course length (in hours)" />
+      <Button layoutX="460.0" layoutY="462.0" mnemonicParsing="false" onAction="#refreshEnrolledCourses" text="Refresh courses" />
+   </children>
+</AnchorPane>

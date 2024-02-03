@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="541.0" prefWidth="846.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.coursesystem.fxControllers.EditCourseController">
+    <children>
+        <SplitPane dividerPositions="0.5" prefHeight="541.0" prefWidth="846.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: lightblue;">
+                    <children>
+                        <TreeTableView fx:id="twEditedCourse" layoutX="28.0" layoutY="46.0" prefHeight="441.0" prefWidth="405.0" AnchorPane.bottomAnchor="52.0" AnchorPane.leftAnchor="28.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="46.0">
+                            <columns>
+                                <TreeTableColumn fx:id="colCourse" prefWidth="379.0" text="Course" />
+                            </columns>
+                        </TreeTableView>
+                        <Label layoutX="43.0" layoutY="18.0" scaleX="1.5" scaleY="1.5" text="Edit course" AnchorPane.leftAnchor="43.0" AnchorPane.topAnchor="18.0" />
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                    <children>
+                        <TextArea fx:id="txtDescription" layoutX="21.0" layoutY="171.0" prefHeight="78.0" prefWidth="353.0" wrapText="true" AnchorPane.leftAnchor="21.0" AnchorPane.rightAnchor="20.0" />
+                        <Label fx:id="lblSelectedCourse" layoutX="169.0" layoutY="53.0" scaleX="2.0" scaleY="2.0" text="Selected course" textAlignment="CENTER" AnchorPane.leftAnchor="169.0">
+                     <font>
+                        <Font size="10.0" />
+                     </font></Label>
+                        <TextField fx:id="txtCourseName" layoutX="21.0" layoutY="112.0" prefHeight="25.0" prefWidth="353.0" AnchorPane.leftAnchor="21.0" AnchorPane.rightAnchor="20.0" />
+                        <Label layoutX="21.0" layoutY="95.0" text="Name" AnchorPane.leftAnchor="21.0" />
+                        <Label layoutX="21.0" layoutY="154.0" text="Description" AnchorPane.leftAnchor="21.0" />
+                        <Label fx:id="lblSelectedFolder" layoutX="28.0" layoutY="301.0" scaleX="1.5" scaleY="1.5" text="Folder" AnchorPane.leftAnchor="28.0" />
+                        <Label fx:id="lblSelectedFile" layoutX="24.0" layoutY="412.0" scaleX="1.5" scaleY="1.5" text="File" AnchorPane.leftAnchor="24.0" />
+                        <Button fx:id="btnSaveCourse" disable="true" layoutX="333.0" layoutY="258.0" mnemonicParsing="false" onAction="#saveCourseInfo" text="Save" AnchorPane.rightAnchor="20.0" />
+                        <TextField fx:id="txtFolderName" disable="true" layoutX="21.0" layoutY="340.0" prefHeight="25.0" prefWidth="353.0" AnchorPane.leftAnchor="21.0" AnchorPane.rightAnchor="20.0" />
+                        <Label layoutX="21.0" layoutY="322.0" text="Folder name" AnchorPane.leftAnchor="21.0" />
+                        <Button fx:id="btnInsertFolder" disable="true" layoutX="328.0" layoutY="373.0" mnemonicParsing="false" onAction="#insertFolder" text="Insert" AnchorPane.rightAnchor="20.0" />
+                        <Button fx:id="btnUpdateFolder" disable="true" layoutX="265.0" layoutY="373.0" mnemonicParsing="false" onAction="#updateFolderInfo" text="Update" AnchorPane.rightAnchor="74.0" />
+                        <Button fx:id="btnDeleteFolder" disable="true" layoutX="206.0" layoutY="373.0" mnemonicParsing="false" onAction="#deleteFolder" text="Delete" AnchorPane.rightAnchor="137.0" />
+                        <Button fx:id="btnDeleteFile" disable="true" layoutX="273.0" layoutY="481.0" mnemonicParsing="false" onAction="#deleteFile" text="Delete" AnchorPane.rightAnchor="70.0" />
+                        <Button fx:id="btnUploadFile" disable="true" layoutX="18.0" layoutY="481.0" mnemonicParsing="false" onAction="#uploadFile" text="Upload" AnchorPane.leftAnchor="18.0" />
+                        <TextField fx:id="txtFileName" disable="true" editable="false" layoutX="21.0" layoutY="450.0" prefHeight="25.0" prefWidth="229.0" AnchorPane.leftAnchor="21.0" AnchorPane.rightAnchor="144.0" />
+                        <Label layoutX="21.0" layoutY="433.0" text="File name" AnchorPane.leftAnchor="21.0" />
+                        <TextField fx:id="txtFileSize" disable="true" editable="false" layoutX="259.0" layoutY="450.0" prefHeight="25.0" prefWidth="118.0" AnchorPane.rightAnchor="17.0" />
+                        <Button fx:id="btnInsertFile" disable="true" layoutX="331.0" layoutY="481.0" mnemonicParsing="false" onAction="#insertFile" text="Insert" AnchorPane.rightAnchor="17.0" />
+                        <Label layoutX="259.0" layoutY="433.0" text="Size (Kb)" AnchorPane.rightAnchor="89.0" />
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+</AnchorPane>

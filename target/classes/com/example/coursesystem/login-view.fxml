@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="AnPane" prefHeight="311.0" prefWidth="326.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.coursesystem.fxControllers.LogInController">
+   <children>
+      <Label fx:id="welcomeText" alignment="CENTER" layoutX="38.0" layoutY="22.0" pickOnBounds="false" prefHeight="34.0" prefWidth="252.0" text="Welcome" textAlignment="CENTER">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="90.0" layoutY="68.0" text="Log In with your credentials" />
+      <TextField fx:id="txtName" layoutX="64.0" layoutY="105.0" prefHeight="25.0" prefWidth="201.0" promptText="Username" />
+      <PasswordField fx:id="txtPassword" layoutX="64.0" layoutY="154.0" prefHeight="25.0" prefWidth="201.0" promptText="Password" />
+      <Button layoutX="88.0" layoutY="201.0" mnemonicParsing="false" onAction="#validationForMainForm" prefHeight="30.0" prefWidth="153.0" text="Log In" textAlignment="CENTER" />
+      <Button fx:id="btnRegister" layoutX="88.0" layoutY="248.0" mnemonicParsing="false" onAction="#openRegisterForm" prefHeight="30.0" prefWidth="153.0" text="Register" />
+   </children>
+</AnchorPane>

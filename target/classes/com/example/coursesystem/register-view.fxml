@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="439.0" prefWidth="324.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.coursesystem.fxControllers.RegisterController">
+   <children>
+      <Label layoutX="36.0" layoutY="14.0" text="Register new account">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="selCompany" layoutX="42.0" layoutY="345.0" mnemonicParsing="false" selected="false" text="Company account">
+         <toggleGroup>
+            <ToggleGroup fx:id="toggleGroup" />
+         </toggleGroup>
+      </RadioButton>
+      <TextField fx:id="txtName" layoutX="40.0" layoutY="190.0" prefHeight="25.0" prefWidth="244.0" promptText="Name" />
+      <PasswordField fx:id="txtPassword" layoutX="40.0" layoutY="116.0" prefHeight="25.0" prefWidth="244.0" promptText="Password" />
+      <TextField fx:id="txtLastName" layoutX="40.0" layoutY="226.0" prefHeight="25.0" prefWidth="244.0" promptText="Last name" />
+      <Button fx:id="btnSignup" layoutX="42.0" layoutY="387.0" mnemonicParsing="false" onAction="#validateAndSignup" prefHeight="25.0" prefWidth="244.0" text="Sign up" />
+      <TextField fx:id="txtEmail" layoutX="40.0" layoutY="261.0" prefHeight="25.0" prefWidth="244.0" promptText="Email" />
+      <RadioButton fx:id="selPersonal" layoutX="174.0" layoutY="345.0" mnemonicParsing="false" selected="true" text="Personal account">
+      </RadioButton>
+      <TextField fx:id="txtCompanyName" layoutX="42.0" layoutY="298.0" prefHeight="25.0" prefWidth="244.0" promptText="Company name" />
+      <TextField fx:id="txtUsername" layoutX="41.0" layoutY="78.0" prefHeight="25.0" prefWidth="244.0" promptText="Username" AnchorPane.bottomAnchor="336.0" AnchorPane.leftAnchor="41.0" AnchorPane.rightAnchor="39.0" AnchorPane.topAnchor="78.0" />
+      <PasswordField fx:id="txtConfirmPassword" layoutX="40.0" layoutY="154.0" prefHeight="25.0" prefWidth="244.0" promptText="Confirm password" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="567.0" prefWidth="882.0" side="LEFT" style="-fx-background-color: lightblue;" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.coursesystem.fxControllers.MainController">
+  <tabs>
+    <Tab fx:id="tabAllCourses" text="All courses">
+    <content>
+       <fx:include source="tabAllCourses-view.fxml" />
+    </content>
+    </Tab>
+    <Tab fx:id="tabEnrolledCourses" text="Enrolled courses">
+    <content>
+       <fx:include source="tabEnrolledCourses-view.fxml" />
+    </content>
+    </Tab>
+    <Tab fx:id="tabManagedCourses" text="Managed courses">
+    <content>
+       <fx:include source="tabManagedCourses-view.fxml" />
+    </content>
+  </Tab>
+  </tabs>
+</TabPane>

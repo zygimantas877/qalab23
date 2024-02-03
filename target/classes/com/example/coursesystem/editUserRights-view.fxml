@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="470.0" prefWidth="984.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.coursesystem.fxControllers.EditUserRightsController">
+   <children>
+      <Label layoutX="183.0" layoutY="23.0" scaleX="2.0" scaleY="2.0" text="Edit privileges" textAlignment="CENTER" AnchorPane.leftAnchor="183.0" AnchorPane.topAnchor="23.0" />
+      <TableView fx:id="tblUserRights" layoutX="14.0" layoutY="85.0" prefHeight="372.0" prefWidth="968.0" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="85.0">
+        <columns>
+          <TableColumn fx:id="colName" prefWidth="221.0" text="Name" />
+          <TableColumn fx:id="colSurname" prefWidth="275.0" text="Surname" />
+            <TableColumn fx:id="colCompanyName" prefWidth="331.0" text="Company name" />
+            <TableColumn fx:id="colHasRights" prefWidth="140.0" text="Privileges" />
+        </columns>
+      </TableView>
+      <Label fx:id="lblCourseName" layoutX="185.0" layoutY="53.0" scaleX="1.5" scaleY="1.5" text="Course name" textAlignment="CENTER" AnchorPane.leftAnchor="185.0" AnchorPane.topAnchor="53.0" />
+      <Button fx:id="btnRevokeRights" disable="true" layoutX="734.0" layoutY="36.0" mnemonicParsing="false" onAction="#revokeRights" prefHeight="25.0" prefWidth="149.0" text="Revoke privileges" />
+      <Button fx:id="btnGrantRights" disable="true" layoutX="554.0" layoutY="36.0" mnemonicParsing="false" onAction="#grantRights" prefHeight="25.0" prefWidth="149.0" text="Grant privileges" />
+   </children>
+</AnchorPane>

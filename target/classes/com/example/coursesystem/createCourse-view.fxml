@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="371.0" prefWidth="422.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.coursesystem.fxControllers.CreateCourseController">
+   <children>
+      <TextField fx:id="txtName" layoutX="31.0" layoutY="111.0" prefHeight="25.0" prefWidth="358.0" />
+      <TextArea fx:id="txtDescription" layoutX="31.0" layoutY="210.0" prefHeight="93.0" prefWidth="358.0" />
+      <Label layoutX="67.0" layoutY="42.0" scaleX="2.0" scaleY="2.0" text="Create course" />
+      <Label fx:id="lblName" layoutX="31.0" layoutY="94.0" text="Name" />
+      <Label layoutX="33.0" layoutY="193.0" text="Description" />
+      <Button layoutX="265.0" layoutY="332.0" mnemonicParsing="false" onAction="#createCourse" prefHeight="25.0" prefWidth="124.0" text="Create course" />
+      <TextField fx:id="txtCourseLength" layoutX="31.0" layoutY="161.0" prefHeight="25.0" prefWidth="358.0" />
+      <Label layoutX="33.0" layoutY="144.0" text="Course length" />
+   </children>
+</AnchorPane>
